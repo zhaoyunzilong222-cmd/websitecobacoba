@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markaz Imam Malik - Membentuk Generasi Qur'ani, Berakhlak Mulia & Berprestasi</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Cairo & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Custom Color Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mim: {
+                            DEFAULT: '#006a41',
+                            dark: '#004d2f',
+                            light: '#008c56',
+                            gold: '#d4af37',
+                            goldlight: '#f39c12',
+                            bg: '#f8faf9',
+                            darkslate: '#1a202c'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        arabic: ['Cairo', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .gold-gradient {
+            background: linear-gradient(135deg, #d4af37 0%, #f39c12 100%);
+        }
+        .mim-gradient {
+            background: linear-gradient(135deg, #006a41 0%, #004d2f 100%);
+        }
+        .hero-pattern {
+            background-color: #006a41;
+            background-image: radial-gradient(#d4af37 0.75px, transparent 0.75px), radial-gradient(#d4af37 0.75px, #006a41 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0,15px 15px;
+            opacity: 0.95;
+        }
+    </style>
+</head>
+<body class="bg-mim-bg text-mim-darkslate font-sans antialiased selection:bg-mim-gold selection:text-white">
+
+    <!-- TOP ANNOUNCEMENT & CONTACT BAR -->
+    <div class="bg-mim-dark text-white text-xs sm:text-sm py-2 px-4 border-b border-mim-gold/20">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-mim-gold"></i> Makassar, Sulawesi Selatan</span>
+                <span class="hidden sm:flex items-center gap-1.5"><i class="fa-solid fa-envelope text-mim-gold"></i> info@markazimammalik.or.id</span>
+                <span class="flex items-center gap-1.5"><i class="fa-brands fa-whatsapp text-mim-gold"></i> 0811-4441-110</span>
+            </div>
+            <div class="flex items-center space-x-3 text-xs">
+                <span class="bg-mim-gold/20 text-mim-gold px-2.5 py-0.5 rounded-full font-semibold border border-mim-gold/30">
+                    <i class="fa-solid fa-bullhorn mr-1"></i> SPMB TA 2026/2027 Telah Dibuka!
+                </span>
+                <div class="flex items-center space-x-2">
+                    <a href="#" class="hover:text-mim-gold transition-colors"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-mim-gold transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-mim-gold transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-md transition-all duration-300" id="main-header">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- LOGO & BRANDING -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <img src="https://scontent.fupg7-1.fna.fbcdn.net/v/t39.30808-6/421115495_712369484319070_1956158968993294934_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x2048&ctp=s2048x2048&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHciJEJQskNeaXuNexeB-kN_lEHuCLVl3T-UQe4ItWXdAceR5joyBSPKrOzV_HCBR8fsUK8rycBk47u2T8sEtxc&_nc_ohc=x2xOm-3chdIQ7kNvwHjZAqn&_nc_oc=AdqmTN_Bea7m-sooC6aZwxgT0XA98uvqHEsRXfAVs7cKIMNzlQ2CUvSlPMgqfDTBTOw&_nc_zt=23&_nc_ht=scontent.fupg7-1.fna&_nc_gid=4xWN5rqyMAggRjHHJsNBoQ&_nc_ss=7b2a8&oh=00_AQN2n6tCWpJ1eTxV2SYZ442rJs2FsqB4p0CWTr2hBO-MfA&oe=6AC38E96" alt="Logo Markaz Imam Malik" class="w-12 h-12 object-contain rounded-xl border-2 border-mim-gold shadow-md group-hover:scale-105 transition-transform">
+                    <div>
+                        <span class="block text-xl font-extrabold text-mim tracking-tight leading-none">MARKAZ IMAM MALIK</span>
+                        <span class="text-xs text-gray-500 font-medium tracking-wide">Pusat Pendidikan Qur'an & Dakwah</span>
+                    </div>
+                </a>
+
+                <!-- DESKTOP NAVIGATION LINKS -->
+                <nav class="hidden lg:flex items-center space-x-7 font-semibold text-sm">
+                    <a href="#beranda" class="text-mim hover:text-mim-gold transition-colors">Beranda</a>
+                    <a href="#profil" class="text-gray-700 hover:text-mim transition-colors">Profil</a>
+                    <a href="#jenjang" class="text-gray-700 hover:text-mim transition-colors">Jenjang</a>
+                    <a href="#program" class="text-gray-700 hover:text-mim transition-colors">Program Unggulan</a>
+                    <a href="#berita" class="text-gray-700 hover:text-mim transition-colors">Berita</a>
+                    <a href="#galeri" class="text-gray-700 hover:text-mim transition-colors">Galeri</a>
+                    <a href="#kontak" class="text-gray-700 hover:text-mim transition-colors">Kontak</a>
+                </nav>
+
+                <!-- CTA BUTTON -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <a href="#SPMB" class="gold-gradient text-white font-bold px-5 py-2.5 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-user-plus"></i> SPMB Online
+                    </a>
+                </div>
+
+                <!-- MOBILE MENU BUTTON -->
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700 hover:text-mim focus:outline-none p-2">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DROPDOWN -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-3 shadow-xl">
+            <a href="#beranda" class="block py-2 text-mim font-bold border-b border-gray-100">Beranda</a>
+            <a href="#profil" class="block py-2 text-gray-700 font-medium border-b border-gray-100">Profil</a>
+            <a href="#jenjang" class="block py-2 text-gray-700 font-medium border-b border-gray-100">Jenjang Pendidikan</a>
+            <a href="#program" class="block py-2 text-gray-700 font-medium border-b border-gray-100">Program Unggulan</a>
+            <a href="#berita" class="block py-2 text-gray-700 font-medium border-b border-gray-100">Berita & Kegiatan</a>
+            <a href="#galeri" class="block py-2 text-gray-700 font-medium border-b border-gray-100">Galeri</a>
+            <a href="#kontak" class="block py-2 text-gray-700 font-medium border-b border-gray-100">Kontak</a>
+            <a href="#SPMB" class="block w-full text-center gold-gradient text-white font-bold py-3 rounded-xl shadow mt-4">
+                <i class="fa-solid fa-user-plus mr-1"></i> Pendaftaran Santri Baru (SPMB)
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="relative hero-pattern text-white overflow-hidden py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- LEFT CONTENT -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-mim-gold/40 px-4 py-1.5 rounded-full text-mim-gold text-sm font-semibold">
+                        <i class="fa-solid fa-star"></i> Lembaga Pendidikan Qur'an Terpadu & Unggul
+                    </div>
+                    
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+                        Membentuk Generasi <span class="text-mim-gold">Qur'ani</span>, Berakhlak Mulia & Berprestasi
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-emerald-100 max-w-2xl font-light leading-relaxed mx-auto lg:mx-0">
+                        Markaz Imam Malik (MIM) Makassar berkomitmen menyelenggarakan pendidikan terpadu dari jenjang PAUD hingga MA, mengintegrasikan Kurikulum Al-Qur'an, Bahasa Arab, Adab Islam, dan Akademik Nasional.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                        <a href="#SPMB" class="gold-gradient text-white font-bold px-8 py-4 rounded-xl shadow-2xl hover:brightness-110 transition-all flex items-center justify-center gap-2 text-base">
+                            <i class="fa-solid fa-paper-plane"></i> Daftar Santri Baru (SPMB)
+                        </a>
+                        <a href="#jenjang" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-semibold px-8 py-4 rounded-xl backdrop-blur-md transition-all flex items-center justify-center gap-2 text-base">
+                            <i class="fa-solid fa-compass"></i> Jelajahi Program
+                        </a>
+                    </div>
+
+                    <!-- QUICK ADVANTAGES BADGES -->
+                    <div class="pt-6 grid grid-cols-3 gap-3 border-t border-white/10 max-w-xl mx-auto lg:mx-0 text-xs sm:text-sm">
+                        <div class="flex items-center justify-center lg:justify-start gap-2">
+                            <i class="fa-solid fa-circle-check text-mim-gold"></i>
+                            <span>Target 30 Juz</span>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-start gap-2">
+                            <i class="fa-solid fa-circle-check text-mim-gold"></i>
+                            <span>Sanad & Mutqin</span>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-start gap-2">
+                            <i class="fa-solid fa-circle-check text-mim-gold"></i>
+                            <span>Bahasa Arab Aktif</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT IMAGE CAROUSEL / CARD -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative rounded-3xl overflow-hidden border-4 border-mim-gold/50 shadow-2xl bg-mim-dark">
+                        <img src="https://images.unsplash.com/photo-1585036156171-384164a8c675?auto=format&fit=crop&w=800&q=80" alt="Santri Markaz Imam Malik" class="w-full h-[400px] object-cover hover:scale-105 transition-transform duration-500">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-6">
+                            <span class="bg-mim-gold text-mim-dark font-bold text-xs px-3 py-1 rounded-full w-max mb-2">Kegiatan Santri</span>
+                            <h3 class="text-xl font-bold text-white">Setoran Hafalan & Tasmi' Al-Qur'an Rutin</h3>
+                            <p class="text-xs text-gray-200 mt-1">Mencetak huffazh dengan hafalan mutqin dan pemahaman adab islami.</p>
+                        </div>
+                    </div>
+
+                    <!-- FLOATING BADGE -->
+                    <div class="absolute -bottom-6 -left-6 bg-white text-mim-darkslate p-4 rounded-2xl shadow-2xl border-2 border-mim-gold flex items-center gap-3 hidden sm:flex">
+                        <div class="w-12 h-12 rounded-xl bg-mim/10 text-mim flex items-center justify-center font-bold text-xl">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-black text-mim">1000+</div>
+                            <div class="text-xs text-gray-600 font-medium">Santri & Alumni Berprestasi</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFIL RINGKAS & STATISTIK -->
+    <section id="profil" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- IMAGE GALLERY GRID -->
+                <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80" class="rounded-2xl shadow-lg object-cover h-48 w-full hover:opacity-90 transition-opacity" alt="Gedung MIM">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" class="rounded-2xl shadow-lg object-cover h-64 w-full hover:opacity-90 transition-opacity" alt="Belajar Santri">
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80" class="rounded-2xl shadow-lg object-cover h-64 w-full hover:opacity-90 transition-opacity" alt="Halaqah Qur'an">
+                        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80" class="rounded-2xl shadow-lg object-cover h-48 w-full hover:opacity-90 transition-opacity" alt="Guru & Asatidzah">
+                    </div>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-block bg-mim/10 text-mim font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">
+                        Tentang Markaz Imam Malik
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-mim-darkslate tracking-tight">
+                        Lembaga Pendidikan Al-Qur'an & Bahasa Arab Berstandar Syari'i
+                    </h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Markaz Imam Malik (MIM) adalah lembaga pendidikan dan dakwah Islam yang berpusat di Kota Makassar. Didirikan dengan tekad melahirkan generasi penganut Al-Qur'an dan Sunnah sesuai pemahaman para Salafush Shalih.
+                    </p>
+
+                    <!-- VISI & MISI TABS / ACCORDION -->
+                    <div class="space-y-4 pt-2">
+                        <div class="p-4 bg-mim-bg rounded-xl border border-mim/10 shadow-sm">
+                            <h4 class="font-bold text-mim text-lg flex items-center gap-2">
+                                <i class="fa-solid fa-eye text-mim-gold"></i> Visi Utama
+                            </h4>
+                            <p class="text-sm text-gray-600 mt-1">
+                                Menjadi pusat pendidikan Al-Qur'an dan Bahasa Arab terdepan dalam melahirkan generasi rabbani yang beraqidah lurus dan unggul secara akademik.
+                            </p>
+                        </div>
+                        <div class="p-4 bg-mim-bg rounded-xl border border-mim/10 shadow-sm">
+                            <h4 class="font-bold text-mim text-lg flex items-center gap-2">
+                                <i class="fa-solid fa-bullseye text-mim-gold"></i> Misi Pendidikan
+                            </h4>
+                            <ul class="text-sm text-gray-600 mt-1 space-y-1 list-disc list-inside">
+                                <li>Menyelenggarakan tahfizh Al-Qur'an dengan standar tajwid dan mutqin.</li>
+                                <li>Menanamkan aqidah salafiyyah dan adab Islamiah dalam kehidupan harian.</li>
+                                <li>Mengajarkan Bahasa Arab secara aktif sebagai kunci ilmu syar'i.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- COUNTER STATS -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-6 rounded-2xl bg-mim text-white shadow-lg border-b-4 border-mim-gold">
+                    <i class="fa-solid fa-users-rectangle text-3xl text-mim-gold mb-2"></i>
+                    <div class="text-3xl font-extrabold">1,200+</div>
+                    <div class="text-xs text-emerald-100 font-medium mt-1">Total Santri Aktif</div>
+                </div>
+                <div class="p-6 rounded-2xl bg-mim text-white shadow-lg border-b-4 border-mim-gold">
+                    <i class="fa-solid fa-chalkboard-user text-3xl text-mim-gold mb-2"></i>
+                    <div class="text-3xl font-extrabold">85+</div>
+                    <div class="text-xs text-emerald-100 font-medium mt-1">Asatidzah & Guru</div>
+                </div>
+                <div class="p-6 rounded-2xl bg-mim text-white shadow-lg border-b-4 border-mim-gold">
+                    <i class="fa-solid fa-book-quran text-3xl text-mim-gold mb-2"></i>
+                    <div class="text-3xl font-extrabold">350+</div>
+                    <div class="text-xs text-emerald-100 font-medium mt-1">Alumni Hafizh 30 Juz</div>
+                </div>
+                <div class="p-6 rounded-2xl bg-mim text-white shadow-lg border-b-4 border-mim-gold">
+                    <i class="fa-solid fa-school text-3xl text-mim-gold mb-2"></i>
+                    <div class="text-3xl font-extrabold">4</div>
+                    <div class="text-xs text-emerald-100 font-medium mt-1">Jenjang Pendidikan</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JENJANG PENDIDIKAN (CARDS + MODAL POPUP) -->
+    <section id="jenjang" class="py-20 bg-mim-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-mim/10 text-mim font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">Unit Pendidikan</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-mim-darkslate mt-3 tracking-tight">Jenjang Pendidikan Markaz Imam Malik</h2>
+                <p class="text-gray-600 mt-2">Pendidikan terpadu berjenjang dari usia dini hingga menengah atas dengan kurikulum terukur.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- CARD 1: PAUD -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=600&q=80" alt="PAUD Qur'an MIM" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-mim-gold text-mim-dark text-xs font-black px-3 py-1 rounded-full uppercase">Usia 3 - 6 Tahun</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-mim group-hover:text-mim-light transition-colors">PAUD Qur'an MIM</h3>
+                            <p class="text-gray-600 text-sm mt-2 line-clamp-3">Pendidikan anak usia dini berbasis pembiasaan karakter islami, hafalan surah-surah pendek, doa harian, dan adab.</p>
+                        </div>
+                        <div class="border-t border-gray-100 pt-4">
+                            <div class="text-xs text-gray-500 font-semibold mb-2"><i class="fa-solid fa-award text-mim-gold mr-1"></i> Target Utama:</div>
+                            <span class="inline-block bg-mim-bg text-mim text-xs px-2.5 py-1 rounded-md font-medium">Hafal Juz 30 & Doa Harian</span>
+                        </div>
+                        <button onclick="openJenjangModal('paud')" class="w-full bg-mim/10 hover:bg-mim text-mim hover:text-white font-bold py-2.5 rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+                            Detail Jenjang <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- CARD 2: KUTTAB -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80" alt="Kuttab Qur'an MIM" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-mim text-white text-xs font-black px-3 py-1 rounded-full uppercase">Setara SD (6-12 Thn)</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-mim group-hover:text-mim-light transition-colors">Kuttab Qur'an MIM</h3>
+                            <p class="text-gray-600 text-sm mt-2 line-clamp-3">Pondasi dasar pendidikan Qur'an dan Iman setara SD. Menyelaraskan hafalan Al-Qur'an, Calistung, dan Ilmu Syar'i dasar.</p>
+                        </div>
+                        <div class="border-t border-gray-100 pt-4">
+                            <div class="text-xs text-gray-500 font-semibold mb-2"><i class="fa-solid fa-award text-mim-gold mr-1"></i> Target Utama:</div>
+                            <span class="inline-block bg-mim-bg text-mim text-xs px-2.5 py-1 rounded-md font-medium">Hafalan 10 - 15 Juz</span>
+                        </div>
+                        <button onclick="openJenjangModal('kuttab')" class="w-full bg-mim/10 hover:bg-mim text-mim hover:text-white font-bold py-2.5 rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+                            Detail Jenjang <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- CARD 3: MTS -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="MTs MIM" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-mim-gold text-mim-dark text-xs font-black px-3 py-1 rounded-full uppercase">Setara SMP</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-mim group-hover:text-mim-light transition-colors">Pesantren Qur'an MTs</h3>
+                            <p class="text-gray-600 text-sm mt-2 line-clamp-3">Pendidikan berasrama (boarding) jenjang SMP. Fokus pemantapan hafalan Al-Qur'an, Bahasa Arab dasar, dan Akademik.</p>
+                        </div>
+                        <div class="border-t border-gray-100 pt-4">
+                            <div class="text-xs text-gray-500 font-semibold mb-2"><i class="fa-solid fa-award text-mim-gold mr-1"></i> Target Utama:</div>
+                            <span class="inline-block bg-mim-bg text-mim text-xs px-2.5 py-1 rounded-md font-medium">Hafal 30 Juz & Bahasa Arab</span>
+                        </div>
+                        <button onclick="openJenjangModal('mts')" class="w-full bg-mim/10 hover:bg-mim text-mim hover:text-white font-bold py-2.5 rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+                            Detail Jenjang <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- CARD 4: MA -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-300 flex flex-col group">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=600&q=80" alt="MA MIM" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-mim text-white text-xs font-black px-3 py-1 rounded-full uppercase">Setara SMA</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-bold text-mim group-hover:text-mim-light transition-colors">Pesantren Qur'an MA</h3>
+                            <p class="text-gray-600 text-sm mt-2 line-clamp-3">Pendidikan tingkat menengah atas dengan pendalaman Dirasah Islamiyah, Sanad Al-Qur'an, dan persiapan perguruan tinggi negeri/TIMENG.</p>
+                        </div>
+                        <div class="border-t border-gray-100 pt-4">
+                            <div class="text-xs text-gray-500 font-semibold mb-2"><i class="fa-solid fa-award text-mim-gold mr-1"></i> Target Utama:</div>
+                            <span class="inline-block bg-mim-bg text-mim text-xs px-2.5 py-1 rounded-md font-medium">Mutqin 30 Juz, Sanad & PTN/LIPIA</span>
+                        </div>
+                        <button onclick="openJenjangModal('ma')" class="w-full bg-mim/10 hover:bg-mim text-mim hover:text-white font-bold py-2.5 rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
+                            Detail Jenjang <i class="fa-solid fa-arrow-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAM UNGGULAN -->
+    <section id="program" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bg-mim/10 text-mim font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">Keunggulan MIM</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-mim-darkslate mt-3 tracking-tight">Program Keunggulan Pendidikan</h2>
+                <p class="text-gray-600 mt-2">Didesain secara khusus untuk melahirkan santri yang berdaya saing global tanpa kehilangan akar nilai-nilai keislaman.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <div class="p-8 rounded-3xl bg-mim-bg border border-mim/10 hover:border-mim-gold/50 shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-mim text-mim-gold flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fa-solid fa-quran"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-mim mb-2">Tahfizh & Sanad Qur'an</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Metode setoran harian terstruktur, Tasmi' sekali duduk 5-30 Juz, serta bimbingan pengambilan Sanad Al-Qur'an mutashil sampai Rasulullah ﷺ.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-mim-bg border border-mim/10 hover:border-mim-gold/50 shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-mim text-mim-gold flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-mim mb-2">Bahasa Arab Intensif</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Penerapan Bi'ah Lughawiyah (lingkungan berbahasa Arab aktif) harian, kajian kitab gundul, serta penguasaan percakapan dan tata bahasa.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-mim-bg border border-mim/10 hover:border-mim-gold/50 shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-mim text-mim-gold flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-mim mb-2">Adab & Karakter Mandiri</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Pembentukan kepribadian santri melalui kurikulum adab Islam, kebiasaan ibadah sunnah, serta pembinaan kedisiplinan dan kemandirian berasrama.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-3xl bg-mim-bg border border-mim/10 hover:border-mim-gold/50 shadow-sm hover:shadow-xl transition-all duration-300">
+                    <div class="w-14 h-14 rounded-2xl bg-mim text-mim-gold flex items-center justify-center text-2xl font-bold mb-6">
+                        <i class="fa-solid fa-person-rifle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-mim mb-2">Ekstrakurikuler Sunnah</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Fasilitas olahraga sunnah dan kepemimpinan meliputi panahan, berkuda, seni bela diri, public speaking, serta keorganisasian santri.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BERITA & KEGIATAN TERBARU -->
+    <section id="berita" class="py-20 bg-mim-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-4">
+                <div>
+                    <span class="bg-mim/10 text-mim font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">Kabar Sekolah</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-mim-darkslate mt-2 tracking-tight">Berita & Kegiatan Santri</h2>
+                </div>
+                <!-- CATEGORY FILTER BUTTONS -->
+                <div class="flex flex-wrap gap-2" id="news-filters">
+                    <button onclick="filterNews('all')" class="news-filter-btn active bg-mim text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all">Semua</button>
+                    <button onclick="filterNews('prestasi')" class="news-filter-btn bg-white text-gray-700 hover:bg-mim hover:text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all shadow-sm">Prestasi</button>
+                    <button onclick="filterNews('kegiatan')" class="news-filter-btn bg-white text-gray-700 hover:bg-mim hover:text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all shadow-sm">Kegiatan</button>
+                    <button onclick="filterNews('SPMB')" class="news-filter-btn bg-white text-gray-700 hover:bg-mim hover:text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all shadow-sm">Info SPMB</button>
+                </div>
+            </div>
+
+            <!-- NEWS GRID -->
+            <div class="grid md:grid-cols-3 gap-8" id="news-grid">
+                
+                <!-- NEWS ITEM 1 -->
+                <article class="news-card prestasi bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-xl transition-all">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80" alt="Berita 1" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-mim-gold text-mim-dark text-xs font-bold px-2.5 py-1 rounded-md">Prestasi</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <div class="text-xs text-gray-400 font-medium"><i class="fa-regular fa-calendar mr-1"></i> 24 September 2026</div>
+                        <h3 class="font-bold text-lg text-mim-darkslate hover:text-mim transition-colors line-clamp-2">Santri MA Markaz Imam Malik Raih Juara 1 MHQ 30 Juz Tingkat Provinsi</h3>
+                        <p class="text-gray-600 text-sm line-clamp-2">Ananda Ahmad Fauzan berhasil menorehkan prestasi gemilang dalam Musabaqah Hifzhil Qur’an 30 Juz...</p>
+                        <button onclick="openNewsModal(1)" class="text-mim font-bold text-xs flex items-center gap-1 hover:gap-2 transition-all pt-2">Baca Selengkapnya <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
+                    </div>
+                </article>
+
+                <!-- NEWS ITEM 2 -->
+                <article class="news-card kegiatan bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-xl transition-all">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80" alt="Berita 2" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-mim text-white text-xs font-bold px-2.5 py-1 rounded-md">Kegiatan</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <div class="text-xs text-gray-400 font-medium"><i class="fa-regular fa-calendar mr-1"></i> 18 September 2026</div>
+                        <h3 class="font-bold text-lg text-mim-darkslate hover:text-mim transition-colors line-clamp-2">Pelaksanaan Tasmi' Al-Qur'an 10 Juz Sekali Duduk Santri MTs</h3>
+                        <p class="text-gray-600 text-sm line-clamp-2">Kegiatan Tasmi' rutin bulanan kembali digelar di Masjid Markaz Imam Malik disaksikan langsung oleh para orang tua...</p>
+                        <button onclick="openNewsModal(2)" class="text-mim font-bold text-xs flex items-center gap-1 hover:gap-2 transition-all pt-2">Baca Selengkapnya <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
+                    </div>
+                </article>
+
+                <!-- NEWS ITEM 3 -->
+                <article class="news-card SPMB bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 hover:shadow-xl transition-all">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80" alt="Berita 3" class="w-full h-full object-cover">
+                        <span class="absolute top-3 left-3 bg-mim-gold text-mim-dark text-xs font-bold px-2.5 py-1 rounded-md">Info SPMB</span>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <div class="text-xs text-gray-400 font-medium"><i class="fa-regular fa-calendar mr-1"></i> 10 September 2026</div>
+                        <h3 class="font-bold text-lg text-mim-darkslate hover:text-mim transition-colors line-clamp-2">Pembukaan Penerimaan Santri Baru (SPMB) Tahun Ajaran 2026/2027</h3>
+                        <p class="text-gray-600 text-sm line-clamp-2">Markaz Imam Malik secara resmi membuka pendaftaran pendaftaran santri baru untuk jenjang PAUD, Kuttab, MTs, dan MA...</p>
+                        <button onclick="openNewsModal(3)" class="text-mim font-bold text-xs flex items-center gap-1 hover:gap-2 transition-all pt-2">Baca Selengkapnya <i class="fa-solid fa-chevron-right text-[10px]"></i></button>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERI DOKUMENTASI -->
+    <section id="galeri" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="bg-mim/10 text-mim font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">Dokumentasi</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-mim-darkslate mt-2 tracking-tight">Galeri Kegiatan & Fasilitas</h2>
+            </div>
+
+            <!-- GALLERY GRID -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="relative rounded-2xl overflow-hidden shadow-md group h-52">
+                    <img src="https://images.unsplash.com/photo-1585036156171-384164a8c675?auto=format&fit=crop&w=600&q=80" alt="Galeri 1" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-mim-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 text-center">
+                        <span class="text-white font-bold text-sm">Halaqah Al-Qur'an</span>
+                    </div>
+                </div>
+                <div class="relative rounded-2xl overflow-hidden shadow-md group h-52">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=600&q=80" alt="Galeri 2" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-mim-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 text-center">
+                        <span class="text-white font-bold text-sm">Proses Belajar Mengajar</span>
+                    </div>
+                </div>
+                <div class="relative rounded-2xl overflow-hidden shadow-md group h-52">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=600&q=80" alt="Galeri 3" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-mim-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 text-center">
+                        <span class="text-white font-bold text-sm">Gedung Utama MIM</span>
+                    </div>
+                </div>
+                <div class="relative rounded-2xl overflow-hidden shadow-md group h-52">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80" alt="Galeri 4" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-mim-dark/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-4 text-center">
+                        <span class="text-white font-bold text-sm">Perpustakaan & Kitab</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERACTIVE SECTION: SPMB ONLINE & KONSULTASI -->
+    <section id="SPMB" class="py-20 mim-gradient text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- LEFT INFO -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="bg-mim-gold/20 text-mim-gold font-bold text-xs px-3.5 py-1.5 rounded-full border border-mim-gold/30">
+                        Pendaftaran Santri Baru (SPMB)
+                    </span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">
+                        Bergabunglah Bersama Keluarga Besar Markaz Imam Malik
+                    </h2>
+                    <p class="text-emerald-100 text-base leading-relaxed">
+                        Isi formulir singkat di samping untuk berkonsultasi langsung dengan Panitia SPMB atau mendapatkan info lengkap brosur dan rincian biaya pendidikan.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-mim-gold/20 text-mim-gold flex items-center justify-center shrink-0 font-bold">1</div>
+                            <div>
+                                <h4 class="font-bold text-white">Isi Formulir Konsultasi</h4>
+                                <p class="text-xs text-emerald-200">Kirim data calon santri dan jenjang yang dituju.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-mim-gold/20 text-mim-gold flex items-center justify-center shrink-0 font-bold">2</div>
+                            <div>
+                                <h4 class="font-bold text-white">Hubungi Admin WhatsApp</h4>
+                                <p class="text-xs text-emerald-200">Sistem akan otomatis menghubungkan ke WhatsApp resmi SPMB MIM.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-xl bg-mim-gold/20 text-mim-gold flex items-center justify-center shrink-0 font-bold">3</div>
+                            <div>
+                                <h4 class="font-bold text-white">Tes Seleksi & Observasi</h4>
+                                <p class="text-xs text-emerald-200">Jadwalkan wawancara dan tes kemampuan membaca Al-Qur'an.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT FORM -->
+                <div class="lg:col-span-6">
+                    <div class="bg-white rounded-3xl p-8 text-mim-darkslate shadow-2xl border-4 border-mim-gold/30">
+                        <h3 class="text-2xl font-extrabold text-mim text-center mb-1">Form Konsultasi & SPMB</h3>
+                        <p class="text-xs text-gray-500 text-center mb-6">Lengkapi data di bawah ini untuk terhubung langsung via WhatsApp</p>
+
+                        <form id="SPMBForm" onsubmit="handleSPMBSubmit(event)" class="space-y-4">
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 mb-1">Nama Orang Tua / Wali *</label>
+                                <input type="text" id="parentName" required placeholder="Contoh: Bapak Ahmad" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-mim text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 mb-1">Nama Calon Santri *</label>
+                                <input type="text" id="studentName" required placeholder="Contoh: Muhammad Ali" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-mim text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 mb-1">Pilihan Jenjang Pendidikan *</label>
+                                <select id="jenjangSelect" required class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-mim text-sm bg-white">
+                                    <option value="">-- Pilih Jenjang --</option>
+                                    <option value="PAUD Qur'an">PAUD Qur'an Markaz Imam Malik</option>
+                                    <option value="KUTTAB Qur'an">Kuttab Qur'an (Setara SD)</option>
+                                    <option value="MTs Qur'an">Pesantren Qur'an MTs (Setara SMP)</option>
+                                    <option value="MA Qur'an">Pesantren Qur'an MA (Setara SMA)</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-bold text-gray-700 mb-1">Nomor WhatsApp Aktif *</label>
+                                <input type="tel" id="whatsappNum" required placeholder="Contoh: 081234567890" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:border-mim text-sm">
+                            </div>
+
+                            <button type="submit" class="w-full gold-gradient text-white font-bold py-4 rounded-xl shadow-lg hover:brightness-110 transition-all text-base flex items-center justify-center gap-2 mt-2">
+                                <i class="fa-brands fa-whatsapp text-lg"></i> Kirim & Konsultasi Sekarang
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer id="kontak" class="bg-mim-dark text-white pt-16 pb-8 border-t-4 border-mim-gold">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+                
+                <!-- BRAND INFO -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <img src="https://scontent.fupg7-1.fna.fbcdn.net/v/t39.30808-6/421115495_712369484319070_1956158968993294934_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x2048&ctp=s2048x2048&_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHciJEJQskNeaXuNexeB-kN_lEHuCLVl3T-UQe4ItWXdAceR5joyBSPKrOzV_HCBR8fsUK8rycBk47u2T8sEtxc&_nc_ohc=x2xOm-3chdIQ7kNvwHjZAqn&_nc_oc=AdqmTN_Bea7m-sooC6aZwxgT0XA98uvqHEsRXfAVs7cKIMNzlQ2CUvSlPMgqfDTBTOw&_nc_zt=23&_nc_ht=scontent.fupg7-1.fna&_nc_gid=4xWN5rqyMAggRjHHJsNBoQ&_nc_ss=7b2a8&oh=00_AQN2n6tCWpJ1eTxV2SYZ442rJs2FsqB4p0CWTr2hBO-MfA&oe=6AC38E96" alt="Logo Markaz Imam Malik" class="w-10 h-10 object-contain rounded-xl border border-mim-gold">
+                        <span class="text-lg font-black text-white tracking-wide">MARKAZ IMAM MALIK</span>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed">
+                        Pusat Pendidikan Al-Qur'an, Bahasa Arab, dan Dakwah Islam di Kota Makassar. Mencetak huffazh berakhlak mulia.
+                    </p>
+                    <div class="flex space-x-3 pt-2">
+                        <a href="#" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-mim-gold hover:text-mim-dark flex items-center justify-center transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-mim-gold hover:text-mim-dark flex items-center justify-center transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-lg bg-white/10 hover:bg-mim-gold hover:text-mim-dark flex items-center justify-center transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- QUICK LINKS -->
+                <div>
+                    <h4 class="text-sm font-bold text-mim-gold uppercase tracking-wider mb-4">Navigasi Cepat</h4>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li><a href="#beranda" class="hover:text-mim-gold transition-colors">Beranda</a></li>
+                        <li><a href="#profil" class="hover:text-mim-gold transition-colors">Profil & Visi Misi</a></li>
+                        <li><a href="#jenjang" class="hover:text-mim-gold transition-colors">Jenjang Pendidikan</a></li>
+                        <li><a href="#program" class="hover:text-mim-gold transition-colors">Program Unggulan</a></li>
+                        <li><a href="#SPMB" class="hover:text-mim-gold transition-colors">SPMB Online</a></li>
+                    </ul>
+                </div>
+
+                <!-- JENJANG -->
+                <div>
+                    <h4 class="text-sm font-bold text-mim-gold uppercase tracking-wider mb-4">Jenjang Pendidikan</h4>
+                    <ul class="space-y-2 text-xs text-gray-300">
+                        <li><a href="#jenjang" class="hover:text-mim-gold transition-colors">PAUD Qur'an MIM</a></li>
+                        <li><a href="#jenjang" class="hover:text-mim-gold transition-colors">Kuttab Qur'an (Setara SD)</a></li>
+                        <li><a href="#jenjang" class="hover:text-mim-gold transition-colors">Pesantren Qur'an MTs (Setara SMP)</a></li>
+                        <li><a href="#jenjang" class="hover:text-mim-gold transition-colors">Pesantren Qur'an MA (Setara SMA)</a></li>
+                    </ul>
+                </div>
+
+                <!-- KONTAK MAKASSAR -->
+                <div>
+                    <h4 class="text-sm font-bold text-mim-gold uppercase tracking-wider mb-4">Kontak & Lokasi</h4>
+                    <ul class="space-y-3 text-xs text-gray-300">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-location-dot text-mim-gold mt-0.5"></i>
+                            <span>Jl. Markaz Imam Malik No. 1, Kota Makassar, Sulawesi Selatan</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-phone text-mim-gold"></i>
+                            <span>(0411) 889-1234 / 0811-4441-110</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-mim-gold"></i>
+                            <span>info@markazimammalik.or.id</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pt-8 text-center text-xs text-gray-400 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 Markaz Imam Malik (MIM) Makassar. All rights reserved.</p>
+                <p class="text-gray-500">Inspirasi Struktur: dafischool.sch.id</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL DETAIL JENJANG -->
+    <div id="jenjangModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+            <button onclick="closeJenjangModal()" class="absolute top-4 right-4 text-gray-400 hover:text-mim text-2xl font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="modalJenjangContent">
+                <!-- Content inserted dynamically via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DETAIL BERITA -->
+    <div id="newsModal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+            <button onclick="closeNewsModal()" class="absolute top-4 right-4 text-gray-400 hover:text-mim text-2xl font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="modalNewsContent">
+                <!-- Content inserted dynamically via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Mobile menu toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Jenjang Modal Data
+        const jenjangData = {
+            paud: {
+                title: "PAUD Qur'an Markaz Imam Malik",
+                age: "Usia 3 - 6 Tahun",
+                desc: "Program pendidikan usia dini yang mengombinasikan metode bermain sambil belajar yang islami dengan pembiasaan hafalan surah pendek dan doa harian.",
+                target: ["Hafal Juz 30 (Juz Amma)", "Hafal 20+ Doa & Adab Harian", "Mampu Membaca Al-Qur'an Metode Iqro / Yanbu'a", "Karakter Mandiri & Akhlakul Karimah"],
+                curriculum: ["Tahfizh Anak Dini", "Adab & Aqidah Dasar", "Motorik & Kreativitas", "Calistung Dasar"]
+            },
+            kuttab: {
+                title: "Kuttab Qur'an Markaz Imam Malik (Setara SD)",
+                age: "Usia 6 - 12 Tahun",
+                desc: "Model pendidikan dasar Islam berasas Iman sebelum Al-Qur'an. Mengembalikan kejayaan pendidikan Islam klasik dipadu ilmu pengetahuan umum dasar.",
+                target: ["Target Hafalan 10 - 15 Juz", "Lancar Bahasa Arab Dasar", "Pemahaman Aqidah Salaf Dasar", "Lulus Ujian Kesetaraan SD"],
+                curriculum: ["Kuttab Al-Qur'an", "Kuttab Iman & Adab", "Matematika & Sains Dasar", "Bahasa Indonesia & Arab"]
+            },
+            mts: {
+                title: "Pesantren Qur'an MTs (Setara SMP)",
+                age: "Usia 12 - 15 Tahun (Boarding)",
+                desc: "Pendidikan menengah pertama berasrama. Santri dididik dalam lingkungan Al-Qur'an 24 jam dengan fokus hafalan mutqin dan akademik nasional.",
+                target: ["Target Hafalan 30 Juz Mutqin", "Bahasa Arab Lisan & Tulisan", "Penguasaan Kitab Matan Dasar", "Persiapan Akademik Unggul"],
+                curriculum: ["Tahfizh Al-Qur'an Intensif", "Nahwu Sharaf & Tajwid", "Aqidah, Fiqih, & Hadits", "Kurikulum Merdeka SMP"]
+            },
+            ma: {
+                title: "Pesantren Qur'an MA (Setara SMA)",
+                age: "Usia 15 - 18 Tahun (Boarding)",
+                desc: "Jenjang lanjutan tingkat atas yang menyiapkan lulusan calon ulama, akademisi, serta pemimpin berkarakter Qur'ani untuk kuliah di PTN atau Timur Tengah.",
+                target: ["Mutqin 30 Juz + Pengambilan Sanad", "Penguasaan Dirasah Islamiyah Kompleks", "Kelulusan PTN Favorit / LIPIA / Universitas Islam Madinah"],
+                curriculum: ["Tahfizh & Qira'at", "Dirasah Islamiyah (Kitab Kuning)", "Bahasa Arab & Inggris", "Persiapan UTBK & Kampus LN"]
+            }
+        };
+
+        function openJenjangModal(type) {
+            const data = jenjangData[type];
+            if(!data) return;
+
+            const modalContent = document.getElementById('modalJenjangContent');
+            modalContent.innerHTML = `
+                <span class="bg-mim/10 text-mim font-bold text-xs px-3 py-1 rounded-full">${data.age}</span>
+                <h3 class="text-2xl font-extrabold text-mim mt-3 mb-2">${data.title}</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-6">${data.desc}</p>
+                
+                <div class="space-y-4 border-t border-gray-100 pt-4">
+                    <div>
+                        <h4 class="font-bold text-sm text-mim-darkslate mb-2"><i class="fa-solid fa-circle-check text-mim-gold mr-1"></i> Target Lulusan:</h4>
+                        <ul class="grid sm:grid-cols-2 gap-2 text-xs text-gray-600">
+                            ${data.target.map(t => `<li class="bg-mim-bg p-2 rounded-lg border border-mim/5 flex items-center gap-1.5"><i class="fa-solid fa-check text-mim text-xs"></i> ${t}</li>`).join('')}
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-sm text-mim-darkslate mb-2"><i class="fa-solid fa-book-open text-mim-gold mr-1"></i> Fokus Kurikulum:</h4>
+                        <div class="flex flex-wrap gap-2 text-xs">
+                            ${data.curriculum.map(c => `<span class="bg-mim text-white font-medium px-2.5 py-1 rounded-md">${c}</span>`).join('')}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-4 border-t border-gray-100 flex gap-3">
+                    <a href="#SPMB" onclick="closeJenjangModal()" class="w-full gold-gradient text-white text-center font-bold py-3 rounded-xl shadow text-sm">Daftar Jenjang Ini</a>
+                </div>
+            `;
+
+            document.getElementById('jenjangModal').classList.remove('hidden');
+            document.getElementById('jenjangModal').classList.add('flex');
+        }
+
+        function closeJenjangModal() {
+            document.getElementById('jenjangModal').classList.add('hidden');
+            document.getElementById('jenjangModal').classList.remove('flex');
+        }
+
+        // News Modal Logic
+        const newsData = {
+            1: {
+                title: "Santri MA Markaz Imam Malik Raih Juara 1 MHQ 30 Juz Tingkat Provinsi",
+                date: "24 September 2026",
+                category: "Prestasi",
+                content: "Alhamdulillah, ananda Ahmad Fauzan dari jenjang Pesantren MA Markaz Imam Malik berhasil meraih Juara 1 dalam Musabaqah Hifzhil Qur'an 30 Juz tingkat Provinsi Sulawesi Selatan. Prestasi ini merupakan wujud keberhasilan komitmen MIM dalam membina hafalan yang mutqin dan tajwid yang akurat."
+            },
+            2: {
+                title: "Pelaksanaan Tasmi' Al-Qur'an 10 Juz Sekali Duduk Santri MTs",
+                date: "18 September 2026",
+                category: "Kegiatan",
+                content: "Markaz Imam Malik kembali menyelenggarakan program ujian Tasmi' hafalan 10 Juz sekali duduk. Kegiatan ini diikuti oleh 15 santri jenjang MTs yang disaksikan secara langsung oleh jajaran penguji serta para orang tua santri."
+            },
+            3: {
+                title: "Pembukaan Penerimaan Santri Baru (SPMB) Tahun Ajaran 2026/2027",
+                date: "10 September 2026",
+                category: "Info SPMB",
+                content: "Panitia SPMB Markaz Imam Malik Makassar mengumumkan bahwa pendaftaran santri baru untuk Gelombang I resmi dibuka. Kuota terbatas untuk jenjang PAUD, Kuttab, MTs, dan MA."
+            }
+        };
+
+        function openNewsModal(id) {
+            const data = newsData[id];
+            if(!data) return;
+
+            const modalContent = document.getElementById('modalNewsContent');
+            modalContent.innerHTML = `
+                <span class="bg-mim-gold text-mim-dark font-bold text-xs px-3 py-1 rounded-full">${data.category}</span>
+                <span class="text-xs text-gray-400 ml-2"><i class="fa-regular fa-calendar"></i> ${data.date}</span>
+                <h3 class="text-xl font-bold text-mim-darkslate mt-3 mb-4">${data.title}</h3>
+                <p class="text-gray-600 text-sm leading-relaxed mb-6">${data.content}</p>
+            `;
+
+            document.getElementById('newsModal').classList.remove('hidden');
+            document.getElementById('newsModal').classList.add('flex');
+        }
+
+        function closeNewsModal() {
+            document.getElementById('newsModal').classList.add('hidden');
+            document.getElementById('newsModal').classList.remove('flex');
+        }
+
+        // News Filtering
+        function filterNews(category) {
+            const cards = document.querySelectorAll('.news-card');
+            const btns = document.querySelectorAll('.news-filter-btn');
+
+            btns.forEach(btn => {
+                btn.classList.remove('active', 'bg-mim', 'text-white');
+                btn.classList.add('bg-white', 'text-gray-700');
+            });
+
+            event.target.classList.add('active', 'bg-mim', 'text-white');
+            event.target.classList.remove('bg-white', 'text-gray-700');
+
+            cards.forEach(card => {
+                if(category === 'all' || card.classList.contains(category)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Handle SPMB Form Submission to WhatsApp
+        function handleSPMBSubmit(e) {
+            e.preventDefault();
+            const parent = document.getElementById('parentName').value;
+            const student = document.getElementById('studentName').value;
+            const jenjang = document.getElementById('jenjangSelect').value;
+            const phone = document.getElementById('whatsappNum').value;
+
+            const message = `Assalamu'alaikum Admin SPMB Markaz Imam Malik.%0A%0ASaya ingin berkonsultasi mengenai pendaftaran santri baru:%0A- *Nama Wali:* ${encodeURIComponent(parent)}%0A- *Nama Calon Santri:* ${encodeURIComponent(student)}%0A- *Jenjang yang Dituju:* ${encodeURIComponent(jenjang)}%0A- *No. HP/WA:* ${encodeURIComponent(phone)}%0A%0AMohon informasi kelanjutan pendaftaran dan brosur. Terima kasih.`;
+
+            // Open WhatsApp with populated message
+            window.open(`https://wa.me/628114441110?text=${message}`, '_blank');
+        }
+    </script>
+</body>
+</html>
